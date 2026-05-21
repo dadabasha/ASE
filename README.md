@@ -21,9 +21,9 @@ Spring Boot, Bootstrap, and Supabase Postgres application for recording daily su
 5. Start the app with environment variables:
 
 ```powershell
-$env:SUPABASE_DB_URL="jdbc:postgresql://aws-1-ap-south-1.pooler.supabase.com:5432/postgres?sslmode=require"
-$env:SUPABASE_DB_USER="postgres.lcumwxkwvtalrtxixmip"
-$env:SUPABASE_DB_PASSWORD="your-database-password"
+$env:SPRING_DATASOURCE_URL="jdbc:postgresql://aws-1-ap-south-1.pooler.supabase.com:5432/postgres?sslmode=require"
+$env:SPRING_DATASOURCE_USERNAME="postgres.lcumwxkwvtalrtxixmip"
+$env:SPRING_DATASOURCE_PASSWORD="your-database-password"
 mvn spring-boot:run
 ```
 
@@ -40,7 +40,7 @@ This repository includes `render.yaml` for a Render Blueprint deployment.
 
 1. Open the Blueprint link for this repo:
    `https://dashboard.render.com/blueprint/new?repo=https://github.com/dadabasha/ASE`
-2. Fill `SUPABASE_DB_PASSWORD` with the ASE Supabase database password.
+2. Fill `SPRING_DATASOURCE_PASSWORD` with the ASE Supabase database password.
 3. Apply the Blueprint and wait for the web service to become live.
 
 ## API Summary

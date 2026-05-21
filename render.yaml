@@ -8,9 +8,9 @@ services:
     dockerContext: .
     healthCheckPath: /login
     envVars:
-      - key: SUPABASE_DB_URL
+      - key: SPRING_DATASOURCE_URL
         value: "jdbc:postgresql://aws-1-ap-south-1.pooler.supabase.com:5432/postgres?sslmode=require"
-      - key: SUPABASE_DB_USER
+      - key: SPRING_DATASOURCE_USERNAME
         value: postgres.lcumwxkwvtalrtxixmip
-      - key: SUPABASE_DB_PASSWORD
+      - key: SPRING_DATASOURCE_PASSWORD
         sync: false
