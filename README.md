@@ -21,8 +21,8 @@ Spring Boot, Bootstrap, and Supabase Postgres application for recording daily su
 5. Start the app with environment variables:
 
 ```powershell
-$env:SUPABASE_DB_URL="jdbc:postgresql://aws-0-your-region.pooler.supabase.com:5432/postgres?sslmode=require"
-$env:SUPABASE_DB_USER="postgres.your-project-ref"
+$env:SUPABASE_DB_URL="jdbc:postgresql://aws-1-ap-south-1.pooler.supabase.com:5432/postgres?sslmode=require"
+$env:SUPABASE_DB_USER="postgres.lcumwxkwvtalrtxixmip"
 $env:SUPABASE_DB_PASSWORD="your-database-password"
 mvn spring-boot:run
 ```

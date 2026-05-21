@@ -3,6 +3,9 @@ target/
 data/
 node_modules/
 local-run*.log
+.supabase-db-password.tmp
+.env.local
+supabase/.temp/
 .mvn/wrapper/maven-wrapper.jar
 !**/src/main/**/target/
 !**/src/test/**/target/
