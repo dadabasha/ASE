@@ -34,6 +34,15 @@ The app also seeds demo users and records automatically when the connected datab
 - Admin: `admin` / `admin123`
 - Engineer: `engineer` / `engineer123`
 
+## Render Deployment
+
+This repository includes `render.yaml` for a Render Blueprint deployment.
+
+1. Open the Blueprint link for this repo:
+   `https://dashboard.render.com/blueprint/new?repo=https://github.com/dadabasha/ASE`
+2. Fill `SUPABASE_DB_PASSWORD` with the ASE Supabase database password.
+3. Apply the Blueprint and wait for the web service to become live.
+
 ## API Summary
 
 - `POST /api/auth/login`
