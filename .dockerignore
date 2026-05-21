@@ -1,0 +1,11 @@
+target/
+data/
+node_modules/
+outputs/
+.git/
+.env.local
+.supabase-db-password.tmp
+local-run*.log
+build_cleaned_workbook.mjs
+clean_data.py
+verify_cleaned_workbook.mjs

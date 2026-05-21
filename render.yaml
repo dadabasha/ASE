@@ -1,15 +1,13 @@
 services:
   - type: web
     name: ase-activity-tracker
-    runtime: java
+    runtime: docker
     plan: free
     autoDeploy: true
-    buildCommand: mvn -DskipTests package
-    startCommand: java -Dserver.port=$PORT -jar target/hrm-0.0.1-SNAPSHOT.jar
+    dockerfilePath: ./Dockerfile
+    dockerContext: .
     healthCheckPath: /login
     envVars:
-      - key: JAVA_VERSION
-        value: "17"
       - key: SUPABASE_DB_URL
         value: jdbc:postgresql://aws-1-ap-south-1.pooler.supabase.com:5432/postgres?sslmode=require
       - key: SUPABASE_DB_USER
