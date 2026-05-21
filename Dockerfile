@@ -9,4 +9,4 @@ WORKDIR /app
 COPY --from=build /app/target/hrm-0.0.1-SNAPSHOT.jar app.jar
 ENV PORT=8080
 EXPOSE 8080
-CMD ["java", "-jar", "app.jar"]
+CMD ["sh", "-c", "java -Dserver.address=0.0.0.0 -Dserver.port=${PORT:-8080} -jar app.jar"]
